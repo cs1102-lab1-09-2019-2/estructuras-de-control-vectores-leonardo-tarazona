@@ -1,10 +1,10 @@
 # Ejercicios Estructuras de Control
 
 Nombre:
---
+Leonardo Tarazona
 
 Github Username:
---
+leonardo-tarazona
 
 Instrucciones:
 --
