@@ -1,19 +1,20 @@
-/*
-Escribir un programa que imprima lo siguiente:
-
-12*****
-123****
-1234***
-12345**
-123456*
-1234567
-
-*/
-
 #include <iostream>
 using std::cout;
 
 int main() {
+    int l=3;
+    int r=5;
+    while (l<9){
+        for (int i=1;i<l;i++){
+            cout<<i;
+        }
+        for (int i=0;i<r;i++){
+            cout<<"*";
+        }
+        cout<<"\n";
+        l++;
+        r--;
+    }
 
 
     return 0;
