@@ -1,25 +1,28 @@
+#include<iostream>
+#include<vector>
+using namespace std;
 
 int mediana(vector<int> &lista);
 vector<int> leerConsola();
 
 vector<int> leerConsola() {
-    //Ingrese un numero positivo, escriba -1 si ya no quiere ingresar mas numeros:
+    vector<int> datos;
+    int in;
+    cin>>in;
+    while (in>0){
+        datos.push_back(in);
+        cin>>in;
+    }
+    return datos;
 }
-
 int mediana(vector<int> &lista) {
-    /*
-    Si el vector es 3, 9, 11, 15
-    Si el número de observaciones es par,
-     la mediana corresponde al promedio de los dos valores centrales.
-     Por ejemplo, en la muestra 3, 9, 11, 15, la mediana es (9+11)/2=10.
-     (v[4/2 -1] + v[4/2])/2 = (v[1] + v[2])/2 = (9+11)/2
-
-    Si el vector es 3, 9, 11, 15, 16
-    Si el numero de observaciones es impar,
-     Por ejemplo, en la muestra 3, 9, 11, 15, 16, la mediana es 11
-     v[4/2] = v[2] = 11
-     */
-    return null;
+    int l=lista.size();
+    int media;
+    if (l%2==0)
+        media=(lista[l/2 -1] + lista[l/2])/2;
+    else
+        media=lista[(l-1)/2];
+    return media;
 }
 
 int main() {
